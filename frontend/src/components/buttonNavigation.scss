@@ -2,24 +2,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");
 
-button {
-  padding: 20px;
-  margin: 15px;
-  border: none;
-  border-radius: 10px;
-  font-family:
-    "Saira Semi Condensed",
-    sans-serif "Franklin Gothic Medium",
-    "Arial Narrow",
-    Arial,
-    sans-serif;
+@mixin buttonStyle {
   color: $violetAccueil;
   background-color: black;
+  border-radius: 10px;
+  border: none;
+}
+
+@mixin buttonHoverStyle {
+  background-color: $violetAccueil;
+  border: 1px solid black;
+  color: black;
+  transition: 0.6s ease;
+  cursor: pointer;
+}
+
+button {
+  @include buttonStyle;
+  padding: 20px;
+  margin: 15px;
+
+  font-family: $fontButtonAccueil, $secourFont;
   font-size: 20pt;
 }
 
 button:hover {
-  color: black;
-  background-color: $violetAccueil;
-  font-family: "UnifrakturMaguntia", cursive, "Times New Roman", Times, serif;
+  @include buttonHoverStyle;
+  font-family: $fontButtonAccueilHover, $secourFont;
 }
