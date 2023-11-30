@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 0px;
+}
+
+header {
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  background-color: peachpuff;
+}
+
+main {
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+}
