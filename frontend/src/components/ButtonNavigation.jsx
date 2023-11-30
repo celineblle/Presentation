@@ -1,4 +1,3 @@
-import React from 'react';
 import './buttonNavigation.css'
 
 function ButtonNavigation() {
