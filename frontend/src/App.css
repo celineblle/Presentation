@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Saira";
+  src: url(./font/Saira_Extra_Condensed/SairaExtraCondensed-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Unifraktur Maguntia";
+  src: url(./font/UnifrakturMaguntia/UnifrakturMaguntia-Regular.ttf) format("truetype");
+}
 body {
   display: flex;
   justify-content: space-around;

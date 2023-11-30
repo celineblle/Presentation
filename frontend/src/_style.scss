@@ -1,8 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");
+@font-face {
+  font-family: "Saira";
+  src: url(./font/Saira_Extra_Condensed/SairaExtraCondensed-Medium.ttf)
+    format("truetype");
+}
 
-$fontButtonAccueil: "Saira Semi Condensed", sans-serif;
-$fontButtonAccueilHover: "UnifrakturMaguntia", cursive;
+@font-face {
+  font-family: "Unifraktur Maguntia";
+  src: url(./font/UnifrakturMaguntia/UnifrakturMaguntia-Regular.ttf)
+    format("truetype");
+}
+
+$fontButtonAccueil: "Saira";
+$fontButtonAccueilHover: "Unifraktur Maguntia";
 $secourFont: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 
 $violetAccueil: #b37fe8;
