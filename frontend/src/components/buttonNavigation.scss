@@ -7,6 +7,8 @@
   background-color: black;
   border-radius: 10px;
   border: none;
+  margin: 15px;
+  height: 13vh;
 }
 
 @mixin buttonHoverStyle {
@@ -19,9 +21,6 @@
 
 button {
   @include buttonStyle;
-  padding: 20px;
-  margin: 15px;
-
   font-family: $fontButtonAccueil, $secourFont;
   font-size: 20pt;
 }
