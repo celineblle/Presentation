@@ -1,7 +1,48 @@
-.carousel {
+@import "../style.scss";
+
+@mixin buttonStyle {
+  color: $violetAccueil;
+  background-color: black;
+  border-radius: 10px;
+  border: none;
+}
+
+@mixin buttonHoverStyle {
+  background-color: $violetAccueil;
+  border: 1px solid black;
+  color: black;
+  transition: 0.6s ease;
+  cursor: pointer;
+}
+
+.slide-container {
+  max-width: 100vw;
   height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slide {
+  height: 100%;
+  transition: 2s;
+}
+
+.prev,
+.next {
+  @include buttonStyle;
+  width: 15vw;
+  padding: 16px;
+  font-size: 18px;
+  height: 10vh;
+}
+
+.prev:hover,
+.next:hover {
+  @include buttonHoverStyle;
 }
 
 img {
   height: 100%;
+  border-radius: 20px;
+  transition: 0s 0.1s;
 }
