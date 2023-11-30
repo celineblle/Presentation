@@ -1,4 +1,3 @@
-import React from 'react';
 import PageTest1 from '../assets/Page_test_1.jpg';
 import './presentationProjets.css';
 

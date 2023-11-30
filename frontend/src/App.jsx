@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import PresentationProjets from './components/PresentationProjets';
 import ButtonNavigation from './components/ButtonNavigation';

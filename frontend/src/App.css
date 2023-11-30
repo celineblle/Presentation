@@ -3,17 +3,17 @@ body {
   justify-content: space-around;
   flex-direction: column;
   margin: 0px;
+  background-color: #b37fe8;
 }
 
 header {
   height: 45vh;
   display: flex;
   justify-content: center;
-  background-color: peachpuff;
 }
 
 main {
-  height: 50vh;
+  height: 50%;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
