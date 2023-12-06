@@ -1,10 +1,10 @@
 @import "../style";
 @import "../mixin";
 
-button {
+.navigation {
   @include buttonStyle;
 }
 
-button:hover {
+.navigation:hover {
   @include buttonHoverStyle;
 }

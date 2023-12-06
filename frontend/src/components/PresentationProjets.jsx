@@ -1,37 +1,33 @@
-import PageTest1 from '../assets/Page_test_1.jpg';
-import './presentationProjets.css';
-import PageTest2 from '../assets/Page_test_2.jpg';
-import PageTest3 from '../assets/Page_test_3.jpg';
-import { useState } from 'react';
+import PageTest1 from "../assets/IMG_0995.jpg";
+import "./presentationProjets.css";
+import PageTest2 from "../assets/IMG_1692.jpg";
+import PageTest3 from "../assets/IMG_1694.jpg";
+import { useState } from "react";
+import arrowNext from "../assets/arrow_next.svg";
+import arrowBack from "../assets/arrow_back.svg";
 
 function PresentationProjets() {
-const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(0);
 
-const images = [
-      PageTest1, PageTest2, PageTest3
-    ]
+  const images = [PageTest1, PageTest2, PageTest3];
 
-function handleClickNext() {
-  if (index < 2) {
-    setIndex(index + 1);
-    console.log(index)
+  function handleClickNext() {
+    if (index < 2) {
+      setIndex(index + 1);
+    }
   }
-}
-function handleClickPrev() {
-  if (index > 0){
-    setIndex(index-1)
-    console.log(index)
+  function handleClickPrev() {
+    if (index > 0) {
+      setIndex(index - 1);
+    }
   }
-}
-  
+
   return (
-    <div className='slide-container'>
-      <button className='prev' onClick={handleClickPrev} >Prev</button>
-      <div className="slide">
-        <img src={images[index]} alt="" />
-      </div>
-    
-    <button className='next' onClick={handleClickNext} >Next</button>
+    <div className="slide-container">
+      <img className="prev" src={arrowBack} onClick={handleClickPrev} />
+      <img className="slides" src={images[index]} alt="" />
+
+      <img className="next" src={arrowNext} onClick={handleClickNext} />
     </div>
   );
 }

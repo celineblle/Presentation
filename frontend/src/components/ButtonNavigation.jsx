@@ -3,11 +3,11 @@ import './buttonNavigation.css'
 function ButtonNavigation() {
   return (
     <>
-      <button type="button">Histoire</button>
-      <button type="button">Etudes</button>
-      <button type="button">Experiences</button>
-      <button type="button">Interets</button>
-      <button type="button">Skills</button>
+      <button className='navigation' type="button">Histoire</button>
+      <button className='navigation' type="button">Etudes</button>
+      <button className='navigation' type="button">Experiences</button>
+      <button className='navigation' type="button">Interets</button>
+      <button className='navigation' type="button">Skills</button>
     </>
   );
 }
